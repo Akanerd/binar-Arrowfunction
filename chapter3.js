@@ -42,6 +42,18 @@ console.log("----------------------------------")
 const checkVowel = (str) => {
     function check() {
         return str.toLowerCase().replace(/[aeiou]/g, function(l) {
+            let result = l.toUpperCase()
+            return result
+          })
+    }
+    return check();
+}
+console.log("Hasil dari vowelWord :" + checkVowel('Baba'))
+
+console.log("----------------------------------")
+const checkVowel2 = (str) => {
+    function check() {
+        return str.toLowerCase().replace(/[aeiou]/g, function(l) {
            let result = String.fromCharCode(l.charCodeAt(0) + 1)
             // result1 = l.toUpperCase()
             return result
@@ -50,7 +62,7 @@ const checkVowel = (str) => {
     }
     return check();
 }
-console.log("Hasil dari vowelWord :" + checkVowel('azzasafah'))
+console.log("Hasil dari vowelWord :" + checkVowel2('azzasafah'))
 
 
 console.log("Cara 1----------------------------------")
