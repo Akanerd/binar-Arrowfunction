@@ -61,7 +61,7 @@ const takeWord = (str) => {
     }
     return check();
 }
-console.log("Hasil dari first dan last word :" + takeWord('azzasafah'))
+console.log("Hasil dari first dan last word :" + takeWord('Susu Milo'))
 
 console.log("Cara 2----------------------------------")
 const takeWord2 = (str) => {
