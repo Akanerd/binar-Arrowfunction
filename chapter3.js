@@ -53,7 +53,7 @@ const checkVowel = (str) => {
 console.log("Hasil dari vowelWord :" + checkVowel('azzasafah'))
 
 
-console.log("----------------------------------")
+console.log("Cara 1----------------------------------")
 const takeWord = (str) => {
     function check() {
        let  result = str.slice(0, 1) + str.slice(-1)
@@ -63,8 +63,18 @@ const takeWord = (str) => {
 }
 console.log("Hasil dari first dan last word :" + takeWord('azzasafah'))
 
+console.log("Cara 2----------------------------------")
+const takeWord2 = (str) => {
+    function check() {
+        let  result = str.substring(0, 1) + str.substring(str.length - 1)
+        return result
+    }
+    return check();
+}
+console.log("Hasil dari first dan last word :" + takeWord2('azzasafah'))
 
-console.log("----------------------------------")
+
+console.log("Cara 1----------------------------------")
 const repeatWord = (num,str) => {
     function check() {
         let result=''
@@ -75,12 +85,34 @@ const repeatWord = (num,str) => {
 }
 console.log("Hasil repeat word :" + repeatWord(2,'aku'))
 
+console.log("cara 2----------------------------------")
+const repeatWord2 = (num,str) => {
+    function check() {
+        let result = str.repeat(num)
+        return result
+    }
+    return check();
+}
+console.log("Hasil repeat word :" + repeatWord2(2,'dia'))
 
-console.log("----------------------------------")
+
+console.log("Cara 1----------------------------------")
 const generateRandomNumber = () => {
     function check() {
         let result=''
         for (let i = 0; i < 6; i++)  result += Math.floor(Math.random() * 10)
+        return result
+    }
+    return check();
+}
+console.log("Hasil generate random number :" + generateRandomNumber())
+
+
+
+console.log("Cara 2----------------------------------")
+const generateRandomNumber2 = () => {
+    function check() {
+        let result = str.repeat(Math.floor(Math.random() * 10))
         return result
     }
     return check();
